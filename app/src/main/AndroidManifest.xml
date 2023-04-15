@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mysts">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/icon8"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon8"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service
+            android:name=".Service.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDkpARJl8uChQdxa1AKlatfMPMR-VZim_A" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".SalesmanDetailsActivity" />
+        <activity android:name=".OTPGenerationActivity" />
+        <activity android:name=".ViewTaskActivity" />
+        <activity android:name=".SalesmanPanelActivity" />
+        <activity
+            android:name=".AddProductActivity"
+            android:label="@string/title_activity_AddProductActivity" />
+        <activity
+            android:name=".AddOrderActivity"
+            android:label="@string/title_activity_AddOrderActivity" />
+        <activity
+            android:name=".CustomerRegistrationActivity"
+            android:label="@string/title_activity_CustomerRegistrationActivity" />
+        <activity
+            android:name=".SalesmanRegistrationActivity"
+            android:label="@string/title_activity_SalesmanRegistration" />
+        <activity
+            android:name=".Product"
+            android:label="Products" />
+        <activity
+            android:name=".Order"
+            android:label="Orders" />
+        <activity
+            android:name=".Customer"
+            android:label="Customers" />
+        <activity
+            android:name=".Salesman"
+            android:label="Salesman" />
+        <activity android:name=".MyOrderDetailsActivity" />
+        <activity
+            android:name=".SalesmanLoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminSignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DistributorLoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserSelectionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".SplacescreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

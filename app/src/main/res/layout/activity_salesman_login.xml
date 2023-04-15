@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SalesmanLoginActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/marginplus3"
+        android:background="@drawable/trackit">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/t5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marginplus14"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_distributor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_outlinegrey"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:padding="@dimen/marginplus2"
+            android:paddingStart="@dimen/marginplus3"
+            android:text="@string/distributor"
+            android:textAllCaps="false"
+            android:textColor="@color/text"
+            android:textSize="20sp"
+            tools:ignore="ButtonStyle,RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btn_salesman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginplus5"
+            android:background="@drawable/rect_outlineblue"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:padding="@dimen/marginplus2"
+            android:paddingStart="@dimen/marginplus3"
+            android:paddingEnd="@dimen/marginplus3"
+            android:text="@string/salesman"
+            android:textAllCaps="false"
+            android:textColor="#009688"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle,RtlSymmetry" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/marginplus12"
+        android:layout_marginTop="@dimen/marginplus6"
+        android:background="@drawable/rect_grayoutline1"
+        android:fontFamily="@font/poppins_light"
+        android:hint="@string/salesman_id_"
+        android:inputType="number"
+        android:padding="@dimen/marginplus2"
+        android:paddingStart="@dimen/marginplus3"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        tools:ignore="RtlSymmetry"
+        android:autofillHints="" />
+
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etusername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/marginplus12"
+        android:layout_marginTop="@dimen/marginplus4"
+        android:background="@drawable/rect_grayoutline1"
+        android:fontFamily="@font/poppins_light"
+        android:hint="@string/password___"
+        android:inputType="textPassword"
+        android:maxLength="10"
+        android:padding="@dimen/marginplus2"
+        android:paddingStart="@dimen/marginplus3"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        tools:ignore="RtlSymmetry"
+        android:autofillHints="" />
+
+
+    <Button
+        android:id="@+id/submit_salesman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/marginplus20"
+        android:layout_marginTop="@dimen/marginplus6"
+        android:layout_marginBottom="@dimen/marginplus2"
+        android:background="@drawable/buttonstylepink"
+        android:elevation="@dimen/marginplus2"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/l_o_g_i_n"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/submit_salesman"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/don_t_have_account"
+        android:textColor="@color/text"
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:layout_below="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/please_contact_to_your_distributor"
+        android:textColor="@color/text"
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
+
+
+
+</RelativeLayout>
+
+
